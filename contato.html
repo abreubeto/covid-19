@@ -1,1 +1,90 @@
-<h1>Entre em contato comigo</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias COVID-19</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="conteudo">
+        <div id="menu">
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item"><a href="index.html">Home</a></li>
+                    <li class="navbar__item"><a href="sobre.html">Sobre</a></li>
+                    <li class="navbar__item"><a href="contato.html">Contato</a></li>
+                    <li class="navbar__item"><a href="saiba_mais.html">Saiba +</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="titulo">
+            <h1>COVID-19 - Principais Notícias</h1>
+        </div>
+
+        <div>
+            Contato
+
+            <div>
+                <!-- Content Form -->
+                <div>
+                    <div class="text-light rgba-stylish-strong py-1 px-1">
+                        <!--Body Form-->
+                        <div>
+                            <!-- formulário -->
+                            <div>
+                                <label>
+                                    <input type="text" id="Form-nome" class="form-control text-white"
+                                        placeholder="Digite seu nome">
+                                </label>
+                            </div>
+                            <div class="md-form mb-1">
+                                <label data-error="wrong" data-success="right" for="Form-email " class="w-100">
+                                    <input type="email" id="Form-email" class="form-control text-white validate"
+                                        placeholder="Digite seu melhor email">
+                                </label>
+                            </div>
+                            <div class="md-form mb-1">
+                                <label data-error="wrong" data-success="right" for="Form-telefone" class="w-100">
+                                    <input type="text" id="Form-fone" class="form-control text-white validate"
+                                        placeholder="Digite seu telefone ou celular">
+                                </label>
+                            </div>
+                            <div class="md-form pb-1">
+                                <label data-error="wrong" data-success="right" for="Form-mensagem" class="w-100">
+                                    <textarea class="form-control text-white" id="Form-mensagem" rows="3"
+                                        placeholder="Escreva aqui o que você quiser..."></textarea>
+                                </label>
+                            </div>
+                            <div class="row d-flex align-items-center mb-4">
+                                <div class="text-center mb-3 col-md-12">
+                                    <button type="button" class="btn btn-primary btn-block btn-rounded z-depth-1"
+                                        onclick="enviaEmail(document.querySelector( '#Form-nome' ).value, 
+                    document.querySelector( '#Form-email' ).value,
+                    document.querySelector( '#Form-fone' ).value, 
+                    document.querySelector( '#Form-mensagem' ).value);">Enviar
+                                    </button>
+                                </div>
+                                <!-- formulário fim -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Form Fim -->
+            </div>
+        </div>
+        <!-- Modal Form - Fim -->
+
+    </div>
+    <div class="rodape">
+        <div>Desenvolvido Por Roberto Abreu</div>
+    </div>
+    </div>
+
+    <script src="smtp.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,32 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Notícias COVID-19</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <div class="menu">
-                    <div>Home</div>
-                    <div>Sobre</div>
-                    <div>Contato</div>
-                    <div>Saiba +</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias COVID-19</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="conteudo">
+        <div id="menu">
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item"><a href="index.html">Home</a></li>
+                    <li class="navbar__item"><a href="sobre.html">Sobre</a></li>
+                    <li class="navbar__item"><a href="contato.html">Contato</a></li>
+                    <li class="navbar__item"><a href="saiba_mais.html">Saiba +</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="titulo">
+            <h1>COVID-19 - Principais Notícias</h1>
+        </div>
+
+        <div id="noticias">
+            <!-- 1 -->
+            <div class="linhanoticias">
+                <div class="noticiaDestaque">
+                    <img class="imgDestaque" src="images/noticia1.jpg">
+                    <h3 class="textoNoticia">Ferramenta monitora ao vivo o avanço da Covid-19 na cidade de São Paulo
+                    </h3>
+                    <p class="descDestaque textoNoticia">
+                        Iniciativa do Observatório Covid-19 BR e da Secretaria de Saúde do município
+                        atualiza números em tempo real, corrigindo o atraso no sistema de notificação
+                        da doença
+                    </p>
+                </div>
+                <!-- 2 -->
+                <div class="noticiaDestaque">
+                    <iframe class="video" src="https://www.youtube.com/embed/0bouXxKuQJg" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                    <h3 class="textoNoticia">Como se prevenir do Coronavírus?</h3>
+                </div>
+                <!-- 3 -->
+                <div class="noticiaDestaque">
+                    <img class="imgDestaque" src="images/noticia3.jpg">
+                    <h3 class="textoNoticia">Covid-19: MS bate recorde de casos confirmados em 24 horas</h3>
+                    <p class="descDestaque textoNoticia">
+                        Foram 18 casos, sendo 14 em Campo Grande; Aumento de internações na rede pública preocupa
+                    </p>
                 </div>
             </div>
-            <div class="section">
-                <div><h1>COVID-19 - Principais Notícias</h1></div>
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-            </div>
-            <div class="footer">
-                <div>Desenvolvido Por Roberto Abreu</div>
+            <div class="linhanoticias">
+                <!-- 4 -->
+                <div class="noticiaDestaque">
+                    <iframe class="video" src="https://player.vimeo.com/video/398420841?wmode=opaque" frameborder="0"
+                        allow="autoplay; fullscreen" allowfullscreen="" width="200"></iframe>
+                    <h3 class="textoNoticia">Qual a gravidade da doença?</h3>
+                </div>
+                <!-- 5 -->
+                <div class="noticiaDestaque">
+                    <img class="imgDestaque" src="images/noticia5.jpg">
+                    <h3 class="textoNoticia">Como os sintomas da Covid-19 evoluem a cada dia, de acordo com a gravidade
+                    </h3>
+                    <p class="descDestaque textoNoticia">
+                        Em geral, os primeiros sinais da doença são febre, tosse e fadiga.
+                        Saiba como eles podem progredir em casos leves, moderados ou graves
+                    </p>
+                </div>
+                <!-- 6 -->
+                <div class="noticiaDestaque">
+                    <iframe class="video" src="https://www.youtube.com/embed/1LSGx_ShpVk" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                        width="200">
+                    </iframe>
+                    <h3 class="textoNoticia">GUIA DE PREVENÇÃO SOBRE O CORONAVÍRUS</h3>
+                </div>
             </div>
         </div>
-    </body>
+        <div class="rodape">
+            <div>por Roberto Abreu</div>
+        </div>
+    </div>
+</body>
+
 </html>
